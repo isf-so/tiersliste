@@ -8,18 +8,40 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    margin: 5px;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 16px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  li:last-child {
-    border-bottom: none;
+  li:nth-child(4n+1) {
+    background-color: #f9d5e5; /* Light pink */
+  }
+  
+  li:nth-child(4n+2) {
+    background-color: #f2d4ae; /* Light yellow */
+  }
+  
+  li:nth-child(4n+3) {
+    background-color: #b7e4c7; /* Light green */
+  }
+  
+  li:nth-child(4n+4) {
+    background-color: #aec8f2; /* Light blue */
   }
   
   input, button {
@@ -27,9 +49,10 @@ body {
   }
   
   input[type="text"], button {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 16px;
   }
   
   button {
@@ -37,6 +60,7 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   button:hover {
@@ -45,6 +69,6 @@ body {
   
   input[type="text"]:focus {
     outline: none;
-    border: 1px solid #4CAF50;
+    border: 2px solid #45a049;
   }
   
