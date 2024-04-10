@@ -1,15 +1,21 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
   }
   
   ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
   
   li {
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   li:last-child {
@@ -18,5 +24,27 @@ body {
   
   input, button {
     margin-top: 10px;
+  }
+  
+  input[type="text"], button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #4CAF50;
   }
   
